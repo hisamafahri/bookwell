@@ -12,16 +12,16 @@ function Company() {
         <div>
             <NavBar text='Google, LLC' />
             <Header text='Google' />
-            <div className='mt-9'>
-                <EventCard eventName='Wellness Day 2021' eventVendor='Event Vendor Name' statusIcon={ <Accept /> }  />
-                <EventCard eventName='Another Wellness Event' eventVendor='Another Event Vendor' statusIcon={ <Waiting /> }  />
-                <EventCard eventName='Wellness Week' eventVendor='Event Vendor' statusIcon={ <Reject /> }  />
-                <EventCard eventName='Wellness Day 2021' eventVendor='Event Vendor Name' statusIcon={ <Accept /> }  />
-                <EventCard eventName='Another Wellness Event' eventVendor='Another Event Vendor' statusIcon={ <Waiting /> }  />
-                <EventCard eventName='Wellness Week' eventVendor='Event Vendor' statusIcon={ <Reject /> }  />
-                <EventCard eventName='Wellness Day 2021' eventVendor='Event Vendor Name' statusIcon={ <Accept /> }  />
-                <EventCard eventName='Another Wellness Event' eventVendor='Another Event Vendor' statusIcon={ <Waiting /> }  />
-                <EventCard eventName='Wellness Week' eventVendor='Event Vendor' statusIcon={ <Reject /> }  />
+            <div className='mt-9 grid items-center justify-center'>
+                <EventCard dateCreated='26 Aug 2021' eventName='Wellness Day 2021' eventVendor='Event Vendor Name!' statusIcon={ <Accept /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Another Wellness Event ka asdjh sdkjashd ' eventVendor='Another Event Vendor' statusIcon={ <Waiting /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Wellness Week' eventVendor='Event Vendor' statusIcon={ <Reject /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Wellness Day 2021' eventVendor='Event Vendor Name' statusIcon={ <Accept /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Another Wellness Event' eventVendor='Another Event Vendor' statusIcon={ <Waiting /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Wellness Week' eventVendor='Event Vendor' statusIcon={ <Reject /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Wellness Day 2021' eventVendor='Event Vendor Name' statusIcon={ <Accept /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Another Wellness Event' eventVendor='Another Event Vendor' statusIcon={ <Waiting /> }  />
+                <EventCard dateCreated='26 Aug 2021' eventName='Wellness Week' eventVendor='Event Vendor' statusIcon={ <Reject /> }  />
             </div>
             <FloatingActionButton />
         </div>

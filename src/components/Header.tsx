@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header({ text }: any) {
     return (
-        <div className='mx-5 mt-12 flex flex-row items-end justify-between'>
+        <div className='mx-5 sm:mx-12 lg:px-16 lg:max-w-7xl mt-12 flex flex-row items-end justify-between'>
                 <div>
                     <p className='font-josefin-sans text-base font-semibold text-bw-font-grey'>Hi, { text }!</p>
                     <p className='font-josefin-sans font-semibold text-4xl mt-3'>Your events</p>
