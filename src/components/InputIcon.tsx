@@ -8,7 +8,7 @@ function InputIcon({ icon, title, type, placeholder, style }: any) {
                     <div className='p-4 bg-bw-light-grey flex-shrink-0 mb-1'>
                         { icon }
                     </div>
-                    <input type={ type } placeholder={ placeholder } className='flex-1 font-rubik p-4 focus:ring-0 focus:outline-none bg-bw-light-grey font-light' />
+                    <input type={ type } placeholder={ placeholder } className='flex-1 font-rubik py-4 pr-4 focus:ring-0 focus:outline-none bg-bw-light-grey font-light' />
                 </div>
             </div>
     )
