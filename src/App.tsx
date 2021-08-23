@@ -1,10 +1,11 @@
 import React from 'react'
+import Login from './routes/Login'
 
 function App() {
 
   return (
     <>
-      <p className="text-red-500" >Hello World!</p>
+      <Login />
     </>
   )
 }
