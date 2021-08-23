@@ -1,16 +1,16 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Header from '../components/Header'
-import Chevron from '../assets/icon/Chevron'
 import { Accept, Reject, Waiting } from '../assets/icon/Status'
 import EventCard from '../components/EventCard'
-import PlusIcon from '../assets/icon/PlusIcon'
 import FloatingActionButton from '../components/FloatingActionButton'
 import ListHeader from '../components/ListHeader'
+import FilterModal from '../components/FilterModal'
 
 function Company() {
     return (
         <div>
+            <FilterModal style='hidden' />
             <NavBar text='Google, LLC' />
             <Header text='Google' />
             <ListHeader name='Vendor name' />
