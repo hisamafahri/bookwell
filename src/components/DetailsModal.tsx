@@ -5,7 +5,7 @@ import DateDetails from './DateDetails'
 import DetailsText from './DetailsText'
 import TripleButton from './TripleButton'
 
-function DetailsModal({ style, onClick }: any) {
+function DetailsModal({ style, onClick, onAcceptClick, onRejectClick }: any) {
     return (
         <div className={`fixed z-20 bg-bw-black bg-opacity-60 w-full h-full flex items-center justify-center ${style} overflow-y-scroll py-16`}>
             <div className='bg-bw-white mx-5 flex-1 max-w-sm mt-72'>
@@ -17,7 +17,7 @@ function DetailsModal({ style, onClick }: any) {
                     <DetailsText label='Proposed location' details='Googleplex, 1600 Amphitheatre Pkwy, Mountain View, CA 94043, United States' style='mt-6' />
                     <DateDetails date1='Tuesday, 17 Aug 2021' date2='Friday, 27 Aug 2021' date3='Monday, 06 Sep 2021' style='mt-6' />
                 </div>
-                <TripleButton onClick={onClick} text1='Cancel' text2='Reject Proposel' text3='Accept and Choose Date' />
+                <TripleButton onClick={onClick} onAcceptClick={onAcceptClick} onRejectClick={onRejectClick} text1='Cancel' text2='Reject Proposal' text3='Accept and Choose Date' />
             </div>
         </div>
     )

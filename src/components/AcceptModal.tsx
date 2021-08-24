@@ -5,7 +5,7 @@ import ChooseDate from './ChooseDate'
 import DetailsText from './DetailsText'
 import DoubleButton from './DoubleButton'
 
-function AcceptModal({ style }: any) {
+function AcceptModal({ style, onClick }: any) {
     return (
         <div className={`fixed z-20 bg-bw-black bg-opacity-60 w-full h-full flex items-center justify-center ${style} overflow-y-scroll py-16`}>
             <div className='bg-bw-white mx-5 flex-1 max-w-sm'>
@@ -14,7 +14,7 @@ function AcceptModal({ style }: any) {
                     <DetailsText label='Event name' details='Wellness event 2021' />
                     <ChooseDate style='mt-6' />
                 </div>
-                <DoubleButton text1='Cancel' text2='Confirm' />
+                <DoubleButton onClick={onClick} text1='Cancel' text2='Confirm' />
             </div>
         </div>
     )

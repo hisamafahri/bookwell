@@ -4,7 +4,7 @@ import DoubleButton from './DoubleButton'
 import TextareaLabel from './TextareaLabel'
 
 
-function RejectModal({ style }: any) {
+function RejectModal({ style, onClick }: any) {
     return (
         <div className={`fixed z-20 bg-bw-black bg-opacity-60 w-full h-full flex items-center justify-center ${style} overflow-y-scroll py-16`}>
             <div className='bg-bw-white mx-5 flex-1 max-w-sm'>
@@ -13,7 +13,7 @@ function RejectModal({ style }: any) {
                     <DetailsText label='Event name' details='Wellness Event 2021' />
                     <TextareaLabel label='Reason of rejection' placeholder='reason of rejection' style='mt-6' />
                 </div>
-                <DoubleButton text1='Cancel' text2='Reject' />
+                <DoubleButton onClick={onClick} text1='Cancel' text2='Reject' />
             </div>
         </div>
     )
