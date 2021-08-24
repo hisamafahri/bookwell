@@ -1,8 +1,8 @@
 @tailwind base;
 
-/* body {
+body {
     overflow: hidden;
-} */
+}
 
 @tailwind components;
 @tailwind utilities;

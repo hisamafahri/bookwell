@@ -6,10 +6,16 @@ import EventCard from '../components/EventCard'
 import FloatingActionButton from '../components/FloatingActionButton'
 import ListHeader from '../components/ListHeader'
 import FilterModal from '../components/FilterModal'
+import NewEventModal from '../components/NewEventModal'
+import DetailsModal from '../components/DetailsModal'
+import AcceptModal from '../components/AcceptModal'
+import RejectModal from '../components/RejectModal'
+
 
 function Company() {
     return (
         <div>
+            <RejectModal />
             <FilterModal style='hidden' />
             <NavBar text='Google, LLC' />
             <Header text='Google' />
