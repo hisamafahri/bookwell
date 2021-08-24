@@ -8,7 +8,7 @@ import TextareaLabel from './TextareaLabel'
 import VendorDropdown from './VendorDropdown'
 
 
-function NewEventModal({ style }: any) {
+function NewEventModal({ style, onClick }: any) {
     return (
         <div className={`fixed z-20 bg-bw-black bg-opacity-60 w-full h-full flex items-center justify-center ${style} overflow-y-scroll py-16`}>
             <div className='bg-bw-white mx-5 flex-1 max-w-sm mt-72'>
@@ -19,7 +19,7 @@ function NewEventModal({ style }: any) {
                     <TextareaLabel label='Proposed location' placeholder='location' style='mt-6' />
                     <ProposedDates style='mt-6' />
                 </div>
-                <DoubleButton text1='Cancel' text2='Save' />
+                <DoubleButton onClick={onClick} text1='Cancel' text2='Save' />
             </div>
         </div>
     )

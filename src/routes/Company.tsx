@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
 import Header from '../components/Header'
 import { Accept, Reject, Waiting } from '../assets/icon/Status'
@@ -7,18 +7,17 @@ import FloatingActionButton from '../components/FloatingActionButton'
 import ListHeader from '../components/ListHeader'
 import FilterModal from '../components/FilterModal'
 import NewEventModal from '../components/NewEventModal'
-import DetailsModal from '../components/DetailsModal'
-import AcceptModal from '../components/AcceptModal'
-import RejectModal from '../components/RejectModal'
 
 
 function Company() {
+    const [filterModal, setFilterModal] = useState('hidden')
+    const [eventModal, setEventModal] = useState('hidden')
     return (
         <div>
-            <RejectModal />
-            <FilterModal style='hidden' />
+            <NewEventModal style={ eventModal } onClick={() => setEventModal('hidden')} />
+            <FilterModal style={ filterModal } onClick={() => setFilterModal('hidden')} />
             <NavBar text='Google, LLC' />
-            <Header text='Google' />
+            <Header text='Google' onClick={() => setFilterModal('')} />
             <ListHeader name='Vendor name' />
             <div className='mt-9 md:mt-0 grid items-center justify-center'>
                 <EventCard dateCreated='26 Aug 2021' eventName='Wellness Day 2021' eventVendor='Event Vendor Name!' statusIcon={ <Accept /> }  />
@@ -32,7 +31,7 @@ function Company() {
                 <EventCard dateCreated='26 Aug 2021' eventName='Wellness Week' eventVendor='Event Vendor' statusIcon={ <Reject /> }  />
             </div>
             <div className='h-24'></div>
-            <FloatingActionButton />
+            <FloatingActionButton onClick={() => setEventModal('')} />
         </div>
     )
 }
