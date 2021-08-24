@@ -3,6 +3,7 @@ import CalendarIcon from '../assets/icon/CalendarIcon'
 import CalendarDetails from './CalendarDetails'
 import DateDetails from './DateDetails'
 import DetailsText from './DetailsText'
+import SingleButton from './SingleButton'
 import TripleButton from './TripleButton'
 
 function DetailsModal({ style, onClick }: any) {
@@ -17,7 +18,7 @@ function DetailsModal({ style, onClick }: any) {
                     <DetailsText label='Proposed location' details='Googleplex, 1600 Amphitheatre Pkwy, Mountain View, CA 94043, United States' style='mt-6' />
                     <DateDetails date1='Tuesday, 17 Aug 2021' date2='Friday, 27 Aug 2021' date3='Monday, 06 Sep 2021' style='mt-6' />
                 </div>
-                <TripleButton onClick={onClick} text1='Cancel' text2='Reject Proposel' text3='Accept and Choose Date' />
+                <SingleButton onClick={onClick} text='Close' />
             </div>
         </div>
     )

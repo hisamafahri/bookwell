@@ -1,10 +1,10 @@
 import React from 'react'
 import Chevron from '../assets/icon/Chevron'
 
-function EventCard({ eventName, eventVendor, statusIcon, dateCreated }: any) {
+function EventCard({ onClick, eventName, eventVendor, statusIcon, dateCreated }: any) {
     return (
         <div className='lg:px-16 lg:max-w-7xl'>
-            <div className='bg-bw-xl-grey mt-2 p-5 sm:py-5 sm:px-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center justify-between cursor-pointer hover:bg-bw-light-grey lg:rounded'>
+            <div onClick={ onClick } className='bg-bw-xl-grey mt-2 p-5 sm:py-5 sm:px-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center justify-between cursor-pointer hover:bg-bw-light-grey lg:rounded'>
                 <div className='hidden md:block'>
                     <p className='pl-6 font-rubik font-light text-base'>{dateCreated}</p>
                 </div>
